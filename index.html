@@ -29,6 +29,34 @@ h1{
     font-size:42px;
 }
 
+/* AD BANNERS */
+.ad{
+    margin:20px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    background:#c8e6c9;
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+/* Sizes */
+.leaderboard{
+    width:728px;
+    height:90px;
+}
+
+.rectangle{
+    width:300px;
+    height:250px;
+}
+
+.mobile{
+    width:320px;
+    height:100px;
+}
+
 /* GRID */
 .container{
     display:grid;
@@ -53,6 +81,13 @@ h1{
     transform:scale(1.07);
     background:#e0f2f1;
 }
+
+/* MOBILE FIX */
+@media(max-width:768px){
+    .leaderboard{
+        display:none;
+    }
+}
 </style>
 
 </head>
@@ -64,17 +99,23 @@ h1{
 
 <h1>Al Wafia Farm</h1>
 
+<!-- TOP BANNER -->
+<div class="ad leaderboard">728 x 90 Banner</div>
+
 <div class="container">
 
 <div class="box">اغنام</div>
-
 <div class="box">ابقار</div>
-
 <div class="box">دواجن</div>
-
 <div class="box">ادويه + اجهزة</div>
 
 </div>
+
+<!-- SIDE / CENTER RECTANGLE -->
+<div class="ad rectangle">300 x 250 Ad</div>
+
+<!-- MOBILE BANNER -->
+<div class="ad mobile">320 x 100 Mobile Banner</div>
 
 </body>
 </html>
